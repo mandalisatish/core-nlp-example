@@ -34,11 +34,12 @@ public class CoreNlpExample {
                 // this is the text of the token
                 String word = token.get(CoreAnnotations.TextAnnotation.class);
                 // this is the POS tag of the token
-                String pos = token.get(CoreAnnotations.PartOfSpeechAnnotation.class);
+                String partOfSpeech = token.get(CoreAnnotations.PartOfSpeechAnnotation.class);
                 // this is the NER label of the token
-                String ne = token.get(CoreAnnotations.NamedEntityTagAnnotation.class);
+                String namedEntity = token.get(CoreAnnotations.NamedEntityTagAnnotation.class);
 
-                System.out.println(String.format("Print: word: [%s] pos: [%s] ne: [%s]", word, pos, ne));
+                System.out.println(String.format("Print: word: [%s] Part Of Speech: [%s] Named Entity : [%s]", word, partOfSpeech, namedEntity));
+                //https://cs.nyu.edu/~grishman/jet/guide/PennPOS.html
             }
         }
     }

@@ -14,7 +14,7 @@ public class TokenizeExample
 
         StanfordCoreNLP stanfordCoreNLP = Pipeline.getPipeline();
 
-        String text = "Hey! This is Dinecvgdsh Krishnan";
+        String text = "Hey! This is Satish Kumar";
 
         CoreDocument coreDocument = new CoreDocument(text);
 
@@ -26,6 +26,12 @@ public class TokenizeExample
 
             System.out.println(coreLabel.originalText());
         }
-
+        //output:
+         // Hey
+         //!
+         //This
+         //is
+         //Satish
+         //Kumar
     }
 }

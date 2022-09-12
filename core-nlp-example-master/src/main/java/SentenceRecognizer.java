@@ -12,7 +12,7 @@ public class SentenceRecognizer {
 
         StanfordCoreNLP stanfordCoreNLP = Pipeline.getPipeline();
 
-        String text = "Hey! I am Dinesh Krishnan. I am Software Developer and Consultant.";
+        String text = "Hey! I am Satish Kumar. I am Software Developer.";
 
         CoreDocument coreDocument = new CoreDocument(text);
 
@@ -24,6 +24,10 @@ public class SentenceRecognizer {
 
             System.out.println(sentence.toString());
         }
+        //OutPut:
+        // Hey!
+        //I am Satish Kumar.
+        //I am Software Developer.
 
 
     }
